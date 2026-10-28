@@ -9,7 +9,7 @@ lasted and whether it was fixed.
 
 > One investigator's screenshot can be challenged. Five independent nodes seeing the same thing at the same time is much harder to challenge.
 
-**Live dashboard:** https://hall-monitor.codeswithroh.workers.dev, reading the
+**Live:** [landing](https://hall-monitor.codeswithroh.workers.dev) · [dashboard](https://hall-monitor.codeswithroh.workers.dev/app/), reading the
 [HallMonitor contract](https://sepolia.etherscan.io/address/0x6f576CCa32A5f4337df8769E42a954d133167888) on Ethereum Sepolia.
 
 Built for the [BLI Legal Tech Hackathon 2](https://dorahacks.io/hackathon/legal-hack-2026) (LegalTech & RegTech track:
@@ -45,7 +45,9 @@ cre/audit/      CRE workflow (TypeScript)
   coppa.ts        category → severity + 16 CFR Part 312 provisions
   pack.ts         canonical evidence pack + keccak256 (shared with the verifier and the frontend)
 contracts/      HallMonitor.sol: CRE receiver with per-page, per-tracker persistence (Foundry)
-web/            Dashboard: docket, case file, live audit runner, in-browser exhibit verifier
+web/            Landing page (/) and dashboard (/app): compliance gauge, exposure radar, observation
+                record, audit trail, tracker drawer with COPPA citations, printable exhibit, site
+                portfolio, live audit pipeline, in-browser exhibit verifier
 tools/verify.ts CLI verifier: re-hash a pack, re-derive its findings, confirm it onchain
 evidence/       Packs and logs from the live Sepolia audits
 ```
@@ -58,10 +60,10 @@ Needs [Bun](https://bun.sh), [Foundry](https://getfoundry.sh) and the [CRE CLI](
 git clone --recurse-submodules https://github.com/codeswithroh/hall-monitor && cd hall-monitor
 bun install && (cd cre/audit && bun install)
 bun run test                      # workflow unit tests + forge tests
-bun run dev                       # KidQuest on :8787, dashboard on :5173
+bun run dev                       # KidQuest on :8787, landing + dashboard on :5173 (/app)
 ```
 
-The dashboard's **Run an audit** panel calls `cre workflow simulate` through the local server and streams
+The dashboard's **Run audit** view calls `cre workflow simulate` through the local server and streams
 the output. Running it needs `cre login` and a funded Sepolia testnet key in `cre/.env`:
 
 ```bash
@@ -81,9 +83,9 @@ because the simulator truncates long lines. Save the log and run `bun run verify
 ### Demo the remediation story
 
 1. Run an audit with trackers on: 6 third parties, 5 high, all **Active**.
-2. Click **Remediate site**, or `curl -X POST localhost:8787/__remediate`.
-3. Run again: 0 found. The case file now shows every tracker **Remediated**, with its history kept.
-4. Click **Re-add trackers** and run again: the trackers come back as **Active**, and their persistence span grows.
+2. Switch off **Trackers planted** on the KidQuest card, or `curl -X POST localhost:8787/__remediate`.
+3. Run again: 0 found. The Overview shows every tracker **Remediated**, with its history kept.
+4. Switch the trackers back on and run again: they return as **Active**, and their persistence span grows.
 
 ## Live deployment (Ethereum Sepolia)
 
@@ -93,6 +95,7 @@ because the simulator truncates long lines. Save the log and run `bun run verify
 | Audit #0: trackers on, 6 found, 5 high | [`0x85406bf7…8077`](https://sepolia.etherscan.io/tx/0x85406bf7d99dfaf1cd8880c64c4c0574d59f4f13fbaecd9212465742cf618077), pack [`evidence/audit1.pack.json`](evidence/audit1.pack.json) |
 | Audit #1: remediated, 0 found | [`0x2b8dbd62…0f01`](https://sepolia.etherscan.io/tx/0x2b8dbd62ff8e51282cbc1de60dfef6501c21ae13d412bc75587fc8b484120f01), log [`evidence/audit2.log`](evidence/audit2.log) |
 | Audit #2: trackers back, 6 found, 5 high | [`0xaa61a6c7…e22f`](https://sepolia.etherscan.io/tx/0xaa61a6c7546b1d9e6d39a8410fc95ddac4bb1e2def02159afd7fdb9253afe22f) |
+| Audit #3: still present ~8 hours later | see the [dashboard](https://hall-monitor.codeswithroh.workers.dev/app/) audit trail |
 
 ```bash
 bun run verify evidence/audit1.pack.json --rpc https://ethereum-sepolia-rpc.publicnode.com \

@@ -92,8 +92,10 @@ Bun.serve({
       const r = await fetch(`${DEMO}/__${demo[1]}`, { method: demo[1] === "state" ? "GET" : "POST" }).catch(() => null)
       return r ? Response.json(await r.json()) : Response.json({ error: "demo site offline" }, { status: 502 })
     }
-    if (pathname === "/app.js") await build() // rebuild on reload while developing
-    const file = Bun.file(`${dir}/dist${pathname === "/" ? "/index.html" : pathname}`)
+    if (pathname === "/app") return Response.redirect("/app/", 301)
+    if (pathname === "/" || pathname === "/app/") await build() // rebuild on page load while developing
+    const path = pathname.endsWith("/") ? `${pathname}index.html` : pathname
+    const file = Bun.file(`${dir}/dist${path}`)
     return (await file.exists()) ? new Response(file) : new Response("Not found", { status: 404 })
   },
 })

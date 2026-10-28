@@ -6,3 +6,4 @@ export const CHAIN = {
 export const HALL_MONITOR = "0x6f576CCa32A5f4337df8769E42a954d133167888" as const
 export const DEPLOY_BLOCK = 12011236n
 export const DEMO_URL = "http://localhost:8787/"
+export const GITHUB = "https://github.com/codeswithroh/hall-monitor"
