@@ -189,5 +189,16 @@
     }
   ],
   "sfx": [],
-  "url": "https://hall-monitor.codeswithroh.workers.dev"
+  "url": "https://hall-monitor.codeswithroh.workers.dev",
+  "credit": false,
+  "cuts": [
+    [
+      59.55,
+      60.82
+    ],
+    [
+      73.06,
+      73.48
+    ]
+  ]
 }
