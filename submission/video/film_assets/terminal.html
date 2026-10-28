@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#dfe0e8;font:20px/1.55 "Geist Mono",ui-monospace,Menlo,monospace;display:grid;place-items:center;height:100vh}
+.win{width:1680px;height:900px;background:#121315;border-radius:22px;box-shadow:0 30px 80px -30px rgba(0,0,0,.5);overflow:hidden;display:flex;flex-direction:column}
+.bar{height:46px;display:flex;align-items:center;gap:9px;padding:0 18px;background:#1c1d20;color:#8a8c94;font-size:15px}
+.bar i{width:13px;height:13px;border-radius:50%;background:#3a3c42} .bar i:nth-child(1){background:#ff5f57}.bar i:nth-child(2){background:#febc2e}.bar i:nth-child(3){background:#28c840}
+.bar span{margin-left:12px}
+pre{margin:0;padding:26px 30px;color:#d9dbe0;white-space:pre-wrap;flex:1;overflow:hidden}
+.p{color:#3EE07F} .hi{color:#ff8a80} .rv{color:#f5c518} .ok{color:#8bd5a2} .h{color:#7fb4ff} .dim{color:#6b6e76}
+.cur{display:inline-block;width:11px;height:22px;background:#d9dbe0;vertical-align:-4px;animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}
+</style></head><body><div class="win"><div class="bar"><i></i><i></i><i></i><span>hall-monitor/cre — zsh</span></div><pre id="o"></pre></div>
+<script>
+const LINES=["Initializing...", "Loading settings...", "Checking RPC connectivity...", "Compiling workflow...", "\u2713 Workflow compiled", "\u2713 Simulation limits enabled", "  Binary hash: 6da3f2b4d6ea9460cf32d63c6ad1e1973278ed215c43dccdfde28322c5fdf7cb", "  Config hash: a486b08e1817d9580b607ec0d7a3034b76d413126aea467c5dcc680ffe7598f9", "2026-10-29T02:50:20Z [SIMULATION] Simulator Initialized", "2026-10-29T02:50:20Z [SIMULATION] Running trigger trigger=cron-trigger@1.0.0", "2026-10-29T02:50:20Z [USER LOG] [http://localhost:8787/] 6 third parties \u00b7 5 high \u00b7 0 medium \u00b7 1 review", "2026-10-29T02:50:20Z [USER LOG] High   analytics.tiktok.com (TikTok Pixel, Advertising)", "2026-10-29T02:50:20Z [USER LOG] High   connect.facebook.net (Meta Pixel, Advertising)", "2026-10-29T02:50:20Z [USER LOG] High   securepubads.g.doubleclick.net (Google (DoubleClick), Advertising)", "2026-10-29T02:50:20Z [USER LOG] High   static.hotjar.com (Hotjar, SessionReplay)", "2026-10-29T02:50:20Z [USER LOG] High   www.facebook.com (Meta, Advertising)", "2026-10-29T02:50:20Z [USER LOG] Review www.googletagmanager.com (Google Tag Manager, TagManager)", "2026-10-29T02:50:20Z [USER LOG] evidence hash 0xfdcf387c5d74d1eeea3a3f6138288c77abc6942c9715e3375e176708a5b0d810", "2026-10-29T02:50:20Z [SIMULATION] Execution finished signal received", "2026-10-29T02:50:20Z [SIMULATION] Skipping WorkflowEngineV2"];
+const o=document.getElementById('o');const cmd='cre workflow simulate audit --target staging-settings --trigger-index 0';
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const fmt=l=>{let s=esc(l.replace(/^\S+Z \[(USER LOG|SIMULATION)\] /,(m,k)=>k==='SIMULATION'?'· ':''));
+ if(/^High /.test(s))return '<span class="hi">'+s+'</span>'; if(/^Review /.test(s))return '<span class="rv">'+s+'</span>';
+ if(/^✓/.test(s))return '<span class="ok">'+s+'</span>'; if(/evidence hash/.test(s))return s.replace(/(0x[0-9a-f]+)/,'<span class="h">$1</span>');
+ if(/third parties/.test(s))return '<b>'+s+'</b>'; return '<span class="dim">'+s+'</span>'};
+let out='<span class="p">❯</span> ';o.innerHTML=out+'<span class="cur"></span>';
+window.START=()=>{let i=0;const t=setInterval(()=>{out+=esc(cmd[i++]);o.innerHTML=out+'<span class="cur"></span>';if(i>=cmd.length){clearInterval(t);out+='\n';let j=0;
+ const u=setInterval(()=>{out+=fmt(LINES[j++])+'\n';o.innerHTML=out+'<span class="cur"></span>';if(j>=LINES.length){clearInterval(u);window.DONE=1}},170)}},28)};
+</script></body></html>

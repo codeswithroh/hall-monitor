@@ -1,0 +1,2262 @@
+[
+ {
+  "start": 5.758,
+  "end": 8.771,
+  "text": "This kids' game sends your child's data to Meta,",
+  "html": "This kids' game sends your child's data to <b>Meta,</b>",
+  "words": [
+   {
+    "text": "This",
+    "start": 5.78,
+    "end": 5.84,
+    "b": false
+   },
+   {
+    "text": "kids'",
+    "start": 5.81,
+    "end": 5.928,
+    "b": false
+   },
+   {
+    "text": "game",
+    "start": 5.93,
+    "end": 6.338,
+    "b": false
+   },
+   {
+    "text": "sends",
+    "start": 6.35,
+    "end": 6.648,
+    "b": false
+   },
+   {
+    "text": "your",
+    "start": 6.72,
+    "end": 7.008,
+    "b": false
+   },
+   {
+    "text": "child's",
+    "start": 7.01,
+    "end": 7.538,
+    "b": false
+   },
+   {
+    "text": "data",
+    "start": 7.58,
+    "end": 7.888,
+    "b": false
+   },
+   {
+    "text": "to",
+    "start": 7.82,
+    "end": 8.148,
+    "b": false
+   },
+   {
+    "text": "Meta,",
+    "start": 8.13,
+    "end": 8.771,
+    "b": true
+   }
+  ]
+ },
+ {
+  "start": 8.771,
+  "end": 11.785,
+  "text": "TikTok and Google before any parent says yes.",
+  "html": "<b>TikTok and Google</b> before any parent says yes.",
+  "words": [
+   {
+    "text": "TikTok",
+    "start": 8.84,
+    "end": 8.941,
+    "b": true
+   },
+   {
+    "text": "and",
+    "start": 8.93,
+    "end": 9.141,
+    "b": true
+   },
+   {
+    "text": "Google",
+    "start": 9.12,
+    "end": 10.021,
+    "b": true
+   },
+   {
+    "text": "before",
+    "start": 10.02,
+    "end": 10.801,
+    "b": false
+   },
+   {
+    "text": "any",
+    "start": 10.75,
+    "end": 11.311,
+    "b": false
+   },
+   {
+    "text": "parent",
+    "start": 11.24,
+    "end": 11.785,
+    "b": false
+   },
+   {
+    "text": "says",
+    "start": 11.73,
+    "end": 11.785,
+    "b": false
+   },
+   {
+    "text": "yes.",
+    "start": 11.76,
+    "end": 11.785,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 12.188,
+  "end": 14.38,
+  "text": "It's built for six to twelve year",
+  "html": "It's built for six to twelve year",
+  "words": [
+   {
+    "text": "It's",
+    "start": 12.19,
+    "end": 12.25,
+    "b": false
+   },
+   {
+    "text": "built",
+    "start": 12.29,
+    "end": 12.498,
+    "b": false
+   },
+   {
+    "text": "for",
+    "start": 12.46,
+    "end": 12.788,
+    "b": false
+   },
+   {
+    "text": "six",
+    "start": 12.8,
+    "end": 13.078,
+    "b": false
+   },
+   {
+    "text": "to",
+    "start": 13.15,
+    "end": 13.498,
+    "b": false
+   },
+   {
+    "text": "twelve",
+    "start": 13.47,
+    "end": 13.848,
+    "b": false
+   },
+   {
+    "text": "year",
+    "start": 13.91,
+    "end": 14.148,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 14.38,
+  "end": 16.573,
+  "text": "olds. And it loads ad pixels and",
+  "html": "olds. And it loads ad pixels and",
+  "words": [
+   {
+    "text": "olds.",
+    "start": 14.39,
+    "end": 14.45,
+    "b": false
+   },
+   {
+    "text": "And",
+    "start": 14.49,
+    "end": 14.55,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 14.52,
+    "end": 14.58,
+    "b": false
+   },
+   {
+    "text": "loads",
+    "start": 14.55,
+    "end": 14.83,
+    "b": false
+   },
+   {
+    "text": "ad",
+    "start": 14.84,
+    "end": 15.03,
+    "b": false
+   },
+   {
+    "text": "pixels",
+    "start": 14.97,
+    "end": 15.69,
+    "b": false
+   },
+   {
+    "text": "and",
+    "start": 15.69,
+    "end": 15.93,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 16.573,
+  "end": 18.765,
+  "text": "session recording on the very first page.",
+  "html": "session recording on the very first page.",
+  "words": [
+   {
+    "text": "session",
+    "start": 16.58,
+    "end": 16.64,
+    "b": false
+   },
+   {
+    "text": "recording",
+    "start": 16.62,
+    "end": 17.123,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 17.12,
+    "end": 17.433,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 17.51,
+    "end": 17.57,
+    "b": false
+   },
+   {
+    "text": "very",
+    "start": 17.58,
+    "end": 17.683,
+    "b": false
+   },
+   {
+    "text": "first",
+    "start": 17.66,
+    "end": 18.023,
+    "b": false
+   },
+   {
+    "text": "page.",
+    "start": 18.04,
+    "end": 18.583,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 19.371,
+  "end": 22.89,
+  "text": "Under COPPA, that needs verifiable parental consent.",
+  "html": "Under COPPA, that needs <b>verifiable parental consent</b>.",
+  "words": [
+   {
+    "text": "Under",
+    "start": 19.38,
+    "end": 19.441,
+    "b": false
+   },
+   {
+    "text": "COPPA,",
+    "start": 19.4,
+    "end": 20.401,
+    "b": false
+   },
+   {
+    "text": "that",
+    "start": 20.4,
+    "end": 20.611,
+    "b": false
+   },
+   {
+    "text": "needs",
+    "start": 20.67,
+    "end": 21.051,
+    "b": false
+   },
+   {
+    "text": "verifiable",
+    "start": 21.05,
+    "end": 21.701,
+    "b": true
+   },
+   {
+    "text": "parental",
+    "start": 21.66,
+    "end": 22.271,
+    "b": true
+   },
+   {
+    "text": "consent.",
+    "start": 22.32,
+    "end": 22.89,
+    "b": true
+   }
+  ]
+ },
+ {
+  "start": 25.021,
+  "end": 28.239,
+  "text": "And since the FTC's 2025 update, sharing kids'",
+  "html": "And since the FTC's 2025 update, sharing kids'",
+  "words": [
+   {
+    "text": "And",
+    "start": 25.03,
+    "end": 25.09,
+    "b": false
+   },
+   {
+    "text": "since",
+    "start": 25.11,
+    "end": 25.171,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 25.21,
+    "end": 25.431,
+    "b": false
+   },
+   {
+    "text": "FTC's",
+    "start": 25.39,
+    "end": 25.861,
+    "b": false
+   },
+   {
+    "text": "2025",
+    "start": 25.83,
+    "end": 26.911,
+    "b": false
+   },
+   {
+    "text": "update,",
+    "start": 26.86,
+    "end": 27.841,
+    "b": false
+   },
+   {
+    "text": "sharing",
+    "start": 27.82,
+    "end": 28.151,
+    "b": false
+   },
+   {
+    "text": "kids'",
+    "start": 28.09,
+    "end": 28.239,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 28.239,
+  "end": 31.456,
+  "text": "data with ad networks needs a separate yes.",
+  "html": "data with ad networks needs a separate yes.",
+  "words": [
+   {
+    "text": "data",
+    "start": 28.32,
+    "end": 28.689,
+    "b": false
+   },
+   {
+    "text": "with",
+    "start": 28.76,
+    "end": 29.249,
+    "b": false
+   },
+   {
+    "text": "ad",
+    "start": 29.23,
+    "end": 29.389,
+    "b": false
+   },
+   {
+    "text": "networks",
+    "start": 29.32,
+    "end": 30.209,
+    "b": false
+   },
+   {
+    "text": "needs",
+    "start": 30.2,
+    "end": 30.499,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 30.55,
+    "end": 30.61,
+    "b": false
+   },
+   {
+    "text": "separate",
+    "start": 30.58,
+    "end": 31.079,
+    "b": false
+   },
+   {
+    "text": "yes.",
+    "start": 31.08,
+    "end": 31.289,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 31.881,
+  "end": 33.608,
+  "text": "But proving it is the hard part.",
+  "html": "But proving it is the hard part.",
+  "words": [
+   {
+    "text": "But",
+    "start": 31.91,
+    "end": 31.97,
+    "b": false
+   },
+   {
+    "text": "proving",
+    "start": 31.94,
+    "end": 32.191,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 32.12,
+    "end": 32.361,
+    "b": false
+   },
+   {
+    "text": "is",
+    "start": 32.31,
+    "end": 32.531,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 32.53,
+    "end": 32.661,
+    "b": false
+   },
+   {
+    "text": "hard",
+    "start": 32.66,
+    "end": 33.021,
+    "b": false
+   },
+   {
+    "text": "part.",
+    "start": 33.04,
+    "end": 33.331,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 34.006,
+  "end": 37.163,
+  "text": "Today a case rests on an investigator's screenshot. The",
+  "html": "Today a case rests on an investigator's screenshot. The",
+  "words": [
+   {
+    "text": "Today",
+    "start": 34.03,
+    "end": 35.456,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 35.39,
+    "end": 35.476,
+    "b": false
+   },
+   {
+    "text": "case",
+    "start": 35.45,
+    "end": 35.556,
+    "b": false
+   },
+   {
+    "text": "rests",
+    "start": 35.56,
+    "end": 35.636,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 35.71,
+    "end": 35.77,
+    "b": false
+   },
+   {
+    "text": "an",
+    "start": 35.75,
+    "end": 35.81,
+    "b": false
+   },
+   {
+    "text": "investigator's",
+    "start": 35.84,
+    "end": 35.976,
+    "b": false
+   },
+   {
+    "text": "screenshot.",
+    "start": 35.96,
+    "end": 36.576,
+    "b": false
+   },
+   {
+    "text": "The",
+    "start": 36.5,
+    "end": 37.163,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 37.163,
+  "end": 40.32,
+  "text": "defence asks how it was captured, whether it was",
+  "html": "defence asks how it was captured, whether it was",
+  "words": [
+   {
+    "text": "defence",
+    "start": 37.21,
+    "end": 37.755,
+    "b": false
+   },
+   {
+    "text": "asks",
+    "start": 37.69,
+    "end": 38.093,
+    "b": false
+   },
+   {
+    "text": "how",
+    "start": 38.1,
+    "end": 38.233,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 38.21,
+    "end": 38.413,
+    "b": false
+   },
+   {
+    "text": "was",
+    "start": 38.43,
+    "end": 38.793,
+    "b": false
+   },
+   {
+    "text": "captured,",
+    "start": 38.8,
+    "end": 39.613,
+    "b": false
+   },
+   {
+    "text": "whether",
+    "start": 39.61,
+    "end": 39.733,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 39.77,
+    "end": 39.83,
+    "b": false
+   },
+   {
+    "text": "was",
+    "start": 39.87,
+    "end": 39.93,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 40.32,
+  "end": 43.477,
+  "text": "edited, and how long the tracker was really there.",
+  "html": "edited, and how long the tracker was really there.",
+  "words": [
+   {
+    "text": "edited,",
+    "start": 40.37,
+    "end": 40.58,
+    "b": false
+   },
+   {
+    "text": "and",
+    "start": 40.55,
+    "end": 41.02,
+    "b": false
+   },
+   {
+    "text": "how",
+    "start": 41.02,
+    "end": 41.08,
+    "b": false
+   },
+   {
+    "text": "long",
+    "start": 41.13,
+    "end": 41.38,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 41.33,
+    "end": 41.62,
+    "b": false
+   },
+   {
+    "text": "tracker",
+    "start": 41.56,
+    "end": 42.19,
+    "b": false
+   },
+   {
+    "text": "was",
+    "start": 42.18,
+    "end": 42.43,
+    "b": false
+   },
+   {
+    "text": "really",
+    "start": 42.37,
+    "end": 42.92,
+    "b": false
+   },
+   {
+    "text": "there.",
+    "start": 42.88,
+    "end": 43.37,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 44.771,
+  "end": 45.339,
+  "text": "Until now.",
+  "html": "Until now.",
+  "words": [
+   {
+    "text": "Until",
+    "start": 44.79,
+    "end": 45.339,
+    "b": false
+   },
+   {
+    "text": "now.",
+    "start": 45.25,
+    "end": 45.339,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 51.717,
+  "end": 52.666,
+  "text": "This is Hall Monitor.",
+  "html": "This is Hall Monitor.",
+  "words": [
+   {
+    "text": "This",
+    "start": 51.72,
+    "end": 51.78,
+    "b": false
+   },
+   {
+    "text": "is",
+    "start": 51.78,
+    "end": 51.887,
+    "b": false
+   },
+   {
+    "text": "Hall",
+    "start": 51.9,
+    "end": 52.337,
+    "b": false
+   },
+   {
+    "text": "Monitor.",
+    "start": 52.32,
+    "end": 52.666,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 53.107,
+  "end": 56.603,
+  "text": "Independent Chainlink nodes each load the page on their own.",
+  "html": "Independent Chainlink nodes each load the page on their own.",
+  "words": [
+   {
+    "text": "Independent",
+    "start": 53.11,
+    "end": 53.467,
+    "b": false
+   },
+   {
+    "text": "Chainlink",
+    "start": 53.39,
+    "end": 54.287,
+    "b": false
+   },
+   {
+    "text": "nodes",
+    "start": 54.25,
+    "end": 54.917,
+    "b": false
+   },
+   {
+    "text": "each",
+    "start": 54.91,
+    "end": 55.237,
+    "b": false
+   },
+   {
+    "text": "load",
+    "start": 55.24,
+    "end": 55.557,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 55.6,
+    "end": 56.057,
+    "b": false
+   },
+   {
+    "text": "page",
+    "start": 56.0,
+    "end": 56.603,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 56.52,
+    "end": 56.603,
+    "b": false
+   },
+   {
+    "text": "their",
+    "start": 56.55,
+    "end": 56.603,
+    "b": false
+   },
+   {
+    "text": "own.",
+    "start": 56.59,
+    "end": 56.603,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 56.972,
+  "end": 59.737,
+  "text": "Only the trackers a quorum agrees on",
+  "html": "Only the trackers a quorum agrees on",
+  "words": [
+   {
+    "text": "Only",
+    "start": 56.98,
+    "end": 57.04,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 57.02,
+    "end": 57.122,
+    "b": false
+   },
+   {
+    "text": "trackers",
+    "start": 57.09,
+    "end": 57.902,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 57.89,
+    "end": 58.102,
+    "b": false
+   },
+   {
+    "text": "quorum",
+    "start": 58.1,
+    "end": 58.622,
+    "b": false
+   },
+   {
+    "text": "agrees",
+    "start": 58.63,
+    "end": 59.182,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 59.11,
+    "end": 59.422,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 59.737,
+  "end": 62.502,
+  "text": "go on the record. One",
+  "html": "go on the record. One",
+  "words": [
+   {
+    "text": "go",
+    "start": 61.31,
+    "end": 61.547,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 61.53,
+    "end": 61.59,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 61.63,
+    "end": 61.907,
+    "b": false
+   },
+   {
+    "text": "record.",
+    "start": 61.91,
+    "end": 61.97,
+    "b": false
+   },
+   {
+    "text": "One",
+    "start": 61.95,
+    "end": 62.097,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 62.502,
+  "end": 65.267,
+  "text": "screenshot isn't evidence. Five witnesses are.",
+  "html": "screenshot isn't evidence. <b>Five witnesses are.</b>",
+  "words": [
+   {
+    "text": "screenshot",
+    "start": 62.52,
+    "end": 62.58,
+    "b": false
+   },
+   {
+    "text": "isn't",
+    "start": 62.61,
+    "end": 62.952,
+    "b": false
+   },
+   {
+    "text": "evidence.",
+    "start": 62.95,
+    "end": 63.892,
+    "b": false
+   },
+   {
+    "text": "Five",
+    "start": 63.9,
+    "end": 63.96,
+    "b": true
+   },
+   {
+    "text": "witnesses",
+    "start": 64.0,
+    "end": 64.742,
+    "b": true
+   },
+   {
+    "text": "are.",
+    "start": 64.79,
+    "end": 64.992,
+    "b": true
+   }
+  ]
+ },
+ {
+  "start": 67.781,
+  "end": 68.902,
+  "text": "Let's audit it live.",
+  "html": "Let's audit it live.",
+  "words": [
+   {
+    "text": "Let's",
+    "start": 67.81,
+    "end": 67.87,
+    "b": false
+   },
+   {
+    "text": "audit",
+    "start": 67.87,
+    "end": 68.291,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 68.28,
+    "end": 68.494,
+    "b": false
+   },
+   {
+    "text": "live.",
+    "start": 68.56,
+    "end": 68.902,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 69.281,
+  "end": 71.951,
+  "text": "Fetch. Extract. Consensus.",
+  "html": "Fetch. Extract. Consensus.",
+  "words": [
+   {
+    "text": "Fetch.",
+    "start": 69.34,
+    "end": 69.4,
+    "b": false
+   },
+   {
+    "text": "Extract.",
+    "start": 69.38,
+    "end": 70.161,
+    "b": false
+   },
+   {
+    "text": "Consensus.",
+    "start": 70.22,
+    "end": 71.731,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 71.93,
+  "end": 73.359,
+  "text": "Six third parties. Five",
+  "html": "Six third parties. <b>Five</b>",
+  "words": [
+   {
+    "text": "Six",
+    "start": 71.94,
+    "end": 72.0,
+    "b": false
+   },
+   {
+    "text": "third",
+    "start": 72.03,
+    "end": 72.48,
+    "b": false
+   },
+   {
+    "text": "parties.",
+    "start": 72.48,
+    "end": 73.359,
+    "b": false
+   },
+   {
+    "text": "Five",
+    "start": 73.34,
+    "end": 73.359,
+    "b": true
+   }
+  ]
+ },
+ {
+  "start": 73.359,
+  "end": 77.436,
+  "text": "high severity. On a site for six year olds.",
+  "html": "<b>high severity.</b> On a site for six year olds.",
+  "words": [
+   {
+    "text": "high",
+    "start": 73.58,
+    "end": 74.129,
+    "b": true
+   },
+   {
+    "text": "severity.",
+    "start": 74.1,
+    "end": 75.559,
+    "b": true
+   },
+   {
+    "text": "On",
+    "start": 75.57,
+    "end": 75.889,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 75.89,
+    "end": 76.019,
+    "b": false
+   },
+   {
+    "text": "site",
+    "start": 75.96,
+    "end": 76.369,
+    "b": false
+   },
+   {
+    "text": "for",
+    "start": 76.44,
+    "end": 76.549,
+    "b": false
+   },
+   {
+    "text": "six",
+    "start": 76.52,
+    "end": 76.791,
+    "b": false
+   },
+   {
+    "text": "year",
+    "start": 76.75,
+    "end": 77.113,
+    "b": false
+   },
+   {
+    "text": "olds.",
+    "start": 77.07,
+    "end": 77.436,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 77.801,
+  "end": 81.737,
+  "text": "And it's sealed on Ethereum, where nobody can quietly delete it.",
+  "html": "And it's sealed on Ethereum, where nobody can quietly delete it.",
+  "words": [
+   {
+    "text": "And",
+    "start": 77.82,
+    "end": 77.88,
+    "b": false
+   },
+   {
+    "text": "it's",
+    "start": 77.84,
+    "end": 77.9,
+    "b": false
+   },
+   {
+    "text": "sealed",
+    "start": 77.9,
+    "end": 78.451,
+    "b": false
+   },
+   {
+    "text": "on",
+    "start": 78.46,
+    "end": 78.541,
+    "b": false
+   },
+   {
+    "text": "Ethereum,",
+    "start": 78.48,
+    "end": 79.701,
+    "b": false
+   },
+   {
+    "text": "where",
+    "start": 79.7,
+    "end": 79.781,
+    "b": false
+   },
+   {
+    "text": "nobody",
+    "start": 79.73,
+    "end": 80.241,
+    "b": false
+   },
+   {
+    "text": "can",
+    "start": 80.19,
+    "end": 80.471,
+    "b": false
+   },
+   {
+    "text": "quietly",
+    "start": 80.45,
+    "end": 81.011,
+    "b": false
+   },
+   {
+    "text": "delete",
+    "start": 80.94,
+    "end": 81.461,
+    "b": false
+   },
+   {
+    "text": "it.",
+    "start": 81.51,
+    "end": 81.737,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 85.024,
+  "end": 87.76,
+  "text": "The case file shows everything at a glance.",
+  "html": "The case file shows everything at a glance.",
+  "words": [
+   {
+    "text": "The",
+    "start": 85.03,
+    "end": 85.09,
+    "b": false
+   },
+   {
+    "text": "case",
+    "start": 85.1,
+    "end": 85.16,
+    "b": false
+   },
+   {
+    "text": "file",
+    "start": 85.12,
+    "end": 85.534,
+    "b": false
+   },
+   {
+    "text": "shows",
+    "start": 85.54,
+    "end": 85.824,
+    "b": false
+   },
+   {
+    "text": "everything",
+    "start": 85.86,
+    "end": 86.674,
+    "b": false
+   },
+   {
+    "text": "at",
+    "start": 86.62,
+    "end": 86.914,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 86.9,
+    "end": 86.96,
+    "b": false
+   },
+   {
+    "text": "glance.",
+    "start": 86.94,
+    "end": 87.76,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 89.776,
+  "end": 92.824,
+  "text": "Click any tracker and you get the reasoning",
+  "html": "Click any tracker and you get the reasoning",
+  "words": [
+   {
+    "text": "Click",
+    "start": 89.81,
+    "end": 89.87,
+    "b": false
+   },
+   {
+    "text": "any",
+    "start": 89.87,
+    "end": 89.936,
+    "b": false
+   },
+   {
+    "text": "tracker",
+    "start": 89.99,
+    "end": 90.636,
+    "b": false
+   },
+   {
+    "text": "and",
+    "start": 90.63,
+    "end": 90.826,
+    "b": false
+   },
+   {
+    "text": "you",
+    "start": 90.86,
+    "end": 91.136,
+    "b": false
+   },
+   {
+    "text": "get",
+    "start": 91.12,
+    "end": 91.366,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 91.41,
+    "end": 91.776,
+    "b": false
+   },
+   {
+    "text": "reasoning",
+    "start": 91.73,
+    "end": 92.466,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 92.824,
+  "end": 95.872,
+  "text": "and the exact provisions of 16 CFR",
+  "html": "and the exact provisions of 16 CFR",
+  "words": [
+   {
+    "text": "and",
+    "start": 92.87,
+    "end": 92.93,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 92.9,
+    "end": 92.96,
+    "b": false
+   },
+   {
+    "text": "exact",
+    "start": 92.93,
+    "end": 93.774,
+    "b": false
+   },
+   {
+    "text": "provisions",
+    "start": 93.79,
+    "end": 95.664,
+    "b": false
+   },
+   {
+    "text": "of",
+    "start": 95.66,
+    "end": 95.872,
+    "b": false
+   },
+   {
+    "text": "16",
+    "start": 95.78,
+    "end": 95.872,
+    "b": false
+   },
+   {
+    "text": "CFR",
+    "start": 95.82,
+    "end": 95.872,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 96.299,
+  "end": 97.441,
+  "text": "Part 312.",
+  "html": "Part 312.",
+  "words": [
+   {
+    "text": "Part",
+    "start": 96.3,
+    "end": 96.839,
+    "b": false
+   },
+   {
+    "text": "312.",
+    "start": 96.8,
+    "end": 97.441,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 97.829,
+  "end": 99.998,
+  "text": "It's plain rules, not an AI guess,",
+  "html": "It's plain rules, not an AI guess,",
+  "words": [
+   {
+    "text": "It's",
+    "start": 97.83,
+    "end": 97.89,
+    "b": false
+   },
+   {
+    "text": "plain",
+    "start": 97.87,
+    "end": 97.93,
+    "b": false
+   },
+   {
+    "text": "rules,",
+    "start": 97.96,
+    "end": 98.439,
+    "b": false
+   },
+   {
+    "text": "not",
+    "start": 98.41,
+    "end": 98.659,
+    "b": false
+   },
+   {
+    "text": "an",
+    "start": 98.73,
+    "end": 98.799,
+    "b": false
+   },
+   {
+    "text": "AI",
+    "start": 98.86,
+    "end": 98.939,
+    "b": false
+   },
+   {
+    "text": "guess,",
+    "start": 98.95,
+    "end": 99.998,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 99.998,
+  "end": 102.167,
+  "text": "so every node reaches the same finding",
+  "html": "so every node reaches the same finding",
+  "words": [
+   {
+    "text": "so",
+    "start": 100.07,
+    "end": 100.13,
+    "b": false
+   },
+   {
+    "text": "every",
+    "start": 100.09,
+    "end": 100.158,
+    "b": false
+   },
+   {
+    "text": "node",
+    "start": 100.17,
+    "end": 100.388,
+    "b": false
+   },
+   {
+    "text": "reaches",
+    "start": 100.32,
+    "end": 100.898,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 100.95,
+    "end": 101.118,
+    "b": false
+   },
+   {
+    "text": "same",
+    "start": 101.09,
+    "end": 101.448,
+    "b": false
+   },
+   {
+    "text": "finding",
+    "start": 101.45,
+    "end": 102.167,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 102.167,
+  "end": 104.336,
+  "text": "and a lawyer can check the logic.",
+  "html": "and a lawyer can check the logic.",
+  "words": [
+   {
+    "text": "and",
+    "start": 102.7,
+    "end": 102.787,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 102.8,
+    "end": 102.957,
+    "b": false
+   },
+   {
+    "text": "lawyer",
+    "start": 102.94,
+    "end": 103.307,
+    "b": false
+   },
+   {
+    "text": "can",
+    "start": 103.3,
+    "end": 103.477,
+    "b": false
+   },
+   {
+    "text": "check",
+    "start": 103.4,
+    "end": 103.817,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 103.82,
+    "end": 103.937,
+    "b": false
+   },
+   {
+    "text": "logic.",
+    "start": 103.95,
+    "end": 104.336,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 107.132,
+  "end": 109.05,
+  "text": "Now the site fixes itself.",
+  "html": "Now the site fixes itself.",
+  "words": [
+   {
+    "text": "Now",
+    "start": 107.14,
+    "end": 107.2,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 107.22,
+    "end": 107.412,
+    "b": false
+   },
+   {
+    "text": "site",
+    "start": 107.42,
+    "end": 107.832,
+    "b": false
+   },
+   {
+    "text": "fixes",
+    "start": 107.79,
+    "end": 108.422,
+    "b": false
+   },
+   {
+    "text": "itself.",
+    "start": 108.48,
+    "end": 109.05,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 109.525,
+  "end": 110.394,
+  "text": "We audit again.",
+  "html": "We audit again.",
+  "words": [
+   {
+    "text": "We",
+    "start": 109.53,
+    "end": 109.59,
+    "b": false
+   },
+   {
+    "text": "audit",
+    "start": 109.6,
+    "end": 110.394,
+    "b": false
+   },
+   {
+    "text": "again.",
+    "start": 110.34,
+    "end": 110.394,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 110.914,
+  "end": 111.37,
+  "text": "Clean.",
+  "html": "<b>Clean.</b>",
+  "words": [
+   {
+    "text": "Clean.",
+    "start": 110.94,
+    "end": 111.37,
+    "b": true
+   }
+  ]
+ },
+ {
+  "start": 111.795,
+  "end": 113.4,
+  "text": "But the history stays.",
+  "html": "But the history stays.",
+  "words": [
+   {
+    "text": "But",
+    "start": 111.8,
+    "end": 111.86,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 111.88,
+    "end": 112.305,
+    "b": false
+   },
+   {
+    "text": "history",
+    "start": 112.3,
+    "end": 112.875,
+    "b": false
+   },
+   {
+    "text": "stays.",
+    "start": 112.89,
+    "end": 113.4,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 114.003,
+  "end": 116.992,
+  "text": "The chain shows when each tracker was first seen,",
+  "html": "The chain shows when each tracker was first seen,",
+  "words": [
+   {
+    "text": "The",
+    "start": 114.01,
+    "end": 114.07,
+    "b": false
+   },
+   {
+    "text": "chain",
+    "start": 114.04,
+    "end": 114.323,
+    "b": false
+   },
+   {
+    "text": "shows",
+    "start": 114.33,
+    "end": 114.803,
+    "b": false
+   },
+   {
+    "text": "when",
+    "start": 114.8,
+    "end": 115.193,
+    "b": false
+   },
+   {
+    "text": "each",
+    "start": 115.25,
+    "end": 115.583,
+    "b": false
+   },
+   {
+    "text": "tracker",
+    "start": 115.56,
+    "end": 116.403,
+    "b": false
+   },
+   {
+    "text": "was",
+    "start": 116.41,
+    "end": 116.553,
+    "b": false
+   },
+   {
+    "text": "first",
+    "start": 116.62,
+    "end": 116.992,
+    "b": false
+   },
+   {
+    "text": "seen,",
+    "start": 116.96,
+    "end": 116.992,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 117.392,
+  "end": 118.743,
+  "text": "last seen and removed.",
+  "html": "last seen and removed.",
+  "words": [
+   {
+    "text": "last",
+    "start": 117.4,
+    "end": 117.46,
+    "b": false
+   },
+   {
+    "text": "seen",
+    "start": 117.49,
+    "end": 117.822,
+    "b": false
+   },
+   {
+    "text": "and",
+    "start": 117.82,
+    "end": 117.972,
+    "b": false
+   },
+   {
+    "text": "removed.",
+    "start": 117.94,
+    "end": 118.743,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 119.102,
+  "end": 122.549,
+  "text": "Penalties are per violation, so duration is the evidence.",
+  "html": "Penalties are per violation, so <b>duration</b> is the evidence.",
+  "words": [
+   {
+    "text": "Penalties",
+    "start": 119.11,
+    "end": 119.292,
+    "b": false
+   },
+   {
+    "text": "are",
+    "start": 119.24,
+    "end": 119.542,
+    "b": false
+   },
+   {
+    "text": "per",
+    "start": 119.47,
+    "end": 119.792,
+    "b": false
+   },
+   {
+    "text": "violation,",
+    "start": 119.75,
+    "end": 120.552,
+    "b": false
+   },
+   {
+    "text": "so",
+    "start": 120.52,
+    "end": 120.902,
+    "b": false
+   },
+   {
+    "text": "duration",
+    "start": 120.97,
+    "end": 122.302,
+    "b": true
+   },
+   {
+    "text": "is",
+    "start": 122.23,
+    "end": 122.549,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 122.45,
+    "end": 122.549,
+    "b": false
+   },
+   {
+    "text": "evidence.",
+    "start": 122.53,
+    "end": 122.549,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 122.549,
+  "end": 125.997,
+  "text": "And anyone can check our work. Drop in",
+  "html": "And anyone can check our work. Drop in",
+  "words": [
+   {
+    "text": "And",
+    "start": 122.59,
+    "end": 122.65,
+    "b": false
+   },
+   {
+    "text": "anyone",
+    "start": 122.66,
+    "end": 123.109,
+    "b": false
+   },
+   {
+    "text": "can",
+    "start": 123.1,
+    "end": 123.479,
+    "b": false
+   },
+   {
+    "text": "check",
+    "start": 123.55,
+    "end": 124.099,
+    "b": false
+   },
+   {
+    "text": "our",
+    "start": 124.02,
+    "end": 124.469,
+    "b": false
+   },
+   {
+    "text": "work.",
+    "start": 124.54,
+    "end": 125.179,
+    "b": false
+   },
+   {
+    "text": "Drop",
+    "start": 125.17,
+    "end": 125.459,
+    "b": false
+   },
+   {
+    "text": "in",
+    "start": 125.45,
+    "end": 125.619,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 125.997,
+  "end": 129.444,
+  "text": "the evidence pack. Three green checks, without trusting us.",
+  "html": "the evidence pack. Three green checks, without trusting us.",
+  "words": [
+   {
+    "text": "the",
+    "start": 126.02,
+    "end": 126.08,
+    "b": false
+   },
+   {
+    "text": "evidence",
+    "start": 126.09,
+    "end": 126.227,
+    "b": false
+   },
+   {
+    "text": "pack.",
+    "start": 126.23,
+    "end": 126.947,
+    "b": false
+   },
+   {
+    "text": "Three",
+    "start": 126.92,
+    "end": 127.027,
+    "b": false
+   },
+   {
+    "text": "green",
+    "start": 127.03,
+    "end": 127.467,
+    "b": false
+   },
+   {
+    "text": "checks,",
+    "start": 127.54,
+    "end": 128.077,
+    "b": false
+   },
+   {
+    "text": "without",
+    "start": 128.07,
+    "end": 128.747,
+    "b": false
+   },
+   {
+    "text": "trusting",
+    "start": 128.75,
+    "end": 129.117,
+    "b": false
+   },
+   {
+    "text": "us.",
+    "start": 129.1,
+    "end": 129.444,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 130.549,
+  "end": 133.077,
+  "text": "Under the hood it's a Chainlink CRE workflow.",
+  "html": "Under the hood it's a Chainlink CRE workflow.",
+  "words": [
+   {
+    "text": "Under",
+    "start": 130.55,
+    "end": 130.729,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 130.66,
+    "end": 131.169,
+    "b": false
+   },
+   {
+    "text": "hood",
+    "start": 131.09,
+    "end": 131.749,
+    "b": false
+   },
+   {
+    "text": "it's",
+    "start": 131.75,
+    "end": 132.329,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 132.25,
+    "end": 133.029,
+    "b": false
+   },
+   {
+    "text": "Chainlink",
+    "start": 132.95,
+    "end": 133.077,
+    "b": false
+   },
+   {
+    "text": "CRE",
+    "start": 132.98,
+    "end": 133.077,
+    "b": false
+   },
+   {
+    "text": "workflow.",
+    "start": 133.01,
+    "end": 133.077,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 133.557,
+  "end": 137.054,
+  "text": "Each node fetches, consensus keeps what a quorum",
+  "html": "Each node fetches, consensus keeps what a quorum",
+  "words": [
+   {
+    "text": "Each",
+    "start": 133.56,
+    "end": 133.62,
+    "b": false
+   },
+   {
+    "text": "node",
+    "start": 133.62,
+    "end": 133.804,
+    "b": false
+   },
+   {
+    "text": "fetches,",
+    "start": 133.77,
+    "end": 134.237,
+    "b": false
+   },
+   {
+    "text": "consensus",
+    "start": 134.28,
+    "end": 134.997,
+    "b": false
+   },
+   {
+    "text": "keeps",
+    "start": 135.06,
+    "end": 136.167,
+    "b": false
+   },
+   {
+    "text": "what",
+    "start": 136.17,
+    "end": 136.287,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 136.26,
+    "end": 136.387,
+    "b": false
+   },
+   {
+    "text": "quorum",
+    "start": 136.39,
+    "end": 136.777,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 137.054,
+  "end": 140.552,
+  "text": "saw, and a signed report lands in our contract.",
+  "html": "saw, and a signed report lands in our contract.",
+  "words": [
+   {
+    "text": "saw,",
+    "start": 137.06,
+    "end": 137.12,
+    "b": false
+   },
+   {
+    "text": "and",
+    "start": 137.13,
+    "end": 137.544,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 137.54,
+    "end": 137.664,
+    "b": false
+   },
+   {
+    "text": "signed",
+    "start": 137.72,
+    "end": 138.244,
+    "b": false
+   },
+   {
+    "text": "report",
+    "start": 138.25,
+    "end": 138.834,
+    "b": false
+   },
+   {
+    "text": "lands",
+    "start": 138.83,
+    "end": 139.374,
+    "b": false
+   },
+   {
+    "text": "in",
+    "start": 139.38,
+    "end": 139.504,
+    "b": false
+   },
+   {
+    "text": "our",
+    "start": 139.43,
+    "end": 139.754,
+    "b": false
+   },
+   {
+    "text": "contract.",
+    "start": 139.69,
+    "end": 140.504,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 142.297,
+  "end": 144.443,
+  "text": "The live demo runs that same",
+  "html": "The live demo runs that same",
+  "words": [
+   {
+    "text": "The",
+    "start": 142.3,
+    "end": 142.36,
+    "b": false
+   },
+   {
+    "text": "live",
+    "start": 142.33,
+    "end": 142.467,
+    "b": false
+   },
+   {
+    "text": "demo",
+    "start": 142.51,
+    "end": 142.877,
+    "b": false
+   },
+   {
+    "text": "runs",
+    "start": 142.8,
+    "end": 143.287,
+    "b": false
+   },
+   {
+    "text": "that",
+    "start": 143.23,
+    "end": 143.697,
+    "b": false
+   },
+   {
+    "text": "same",
+    "start": 143.66,
+    "end": 144.107,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 144.443,
+  "end": 146.589,
+  "text": "code, so you can try it yourself.",
+  "html": "code, so you can try it yourself.",
+  "words": [
+   {
+    "text": "code,",
+    "start": 144.5,
+    "end": 144.56,
+    "b": false
+   },
+   {
+    "text": "so",
+    "start": 144.53,
+    "end": 144.59,
+    "b": false
+   },
+   {
+    "text": "you",
+    "start": 144.63,
+    "end": 144.963,
+    "b": false
+   },
+   {
+    "text": "can",
+    "start": 144.94,
+    "end": 145.013,
+    "b": false
+   },
+   {
+    "text": "try",
+    "start": 145.06,
+    "end": 145.453,
+    "b": false
+   },
+   {
+    "text": "it",
+    "start": 145.45,
+    "end": 145.713,
+    "b": false
+   },
+   {
+    "text": "yourself.",
+    "start": 145.69,
+    "end": 146.589,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 150.905,
+  "end": 152.963,
+  "text": "Kids can't read a privacy policy.",
+  "html": "Kids can't read a privacy policy.",
+  "words": [
+   {
+    "text": "Kids",
+    "start": 150.94,
+    "end": 151.0,
+    "b": false
+   },
+   {
+    "text": "can't",
+    "start": 150.98,
+    "end": 151.135,
+    "b": false
+   },
+   {
+    "text": "read",
+    "start": 151.1,
+    "end": 151.485,
+    "b": false
+   },
+   {
+    "text": "a",
+    "start": 151.44,
+    "end": 151.565,
+    "b": false
+   },
+   {
+    "text": "privacy",
+    "start": 151.64,
+    "end": 152.175,
+    "b": false
+   },
+   {
+    "text": "policy.",
+    "start": 152.2,
+    "end": 152.963,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 153.413,
+  "end": 155.572,
+  "text": "Hall Monitor reads the page for them.",
+  "html": "Hall Monitor reads the page for them.",
+  "words": [
+   {
+    "text": "Hall",
+    "start": 153.46,
+    "end": 153.52,
+    "b": false
+   },
+   {
+    "text": "Monitor",
+    "start": 153.49,
+    "end": 153.823,
+    "b": false
+   },
+   {
+    "text": "reads",
+    "start": 153.86,
+    "end": 154.253,
+    "b": false
+   },
+   {
+    "text": "the",
+    "start": 154.25,
+    "end": 154.503,
+    "b": false
+   },
+   {
+    "text": "page",
+    "start": 154.51,
+    "end": 155.103,
+    "b": false
+   },
+   {
+    "text": "for",
+    "start": 155.1,
+    "end": 155.16,
+    "b": false
+   },
+   {
+    "text": "them.",
+    "start": 155.13,
+    "end": 155.572,
+    "b": false
+   }
+  ]
+ },
+ {
+  "start": 156.045,
+  "end": 161.017,
+  "text": "Run an audit at hall-monitor.codeswithroh.workers.dev",
+  "html": "Run an audit at <b>hall-monitor.codeswithroh.workers.dev</b>",
+  "words": [
+   {
+    "text": "Run",
+    "start": 156.05,
+    "end": 156.805,
+    "b": false
+   },
+   {
+    "text": "an",
+    "start": 156.88,
+    "end": 157.675,
+    "b": false
+   },
+   {
+    "text": "audit",
+    "start": 157.64,
+    "end": 159.965,
+    "b": false
+   },
+   {
+    "text": "at",
+    "start": 159.96,
+    "end": 160.725,
+    "b": false
+   },
+   {
+    "text": "hall-monitor.codeswithroh.workers.dev",
+    "start": 160.65,
+    "end": 161.017,
+    "b": true
+   }
+  ]
+ }
+]

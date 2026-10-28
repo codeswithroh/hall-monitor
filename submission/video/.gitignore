@@ -1,0 +1,21 @@
+# Heavy media: regenerate with the pitch-video pipeline
+*.mov
+*.mp4
+*.wav
+shots/
+ov/
+out/
+cine/
+stills/
+anims/*.mp4
+film_assets/evidence-pack.json
+chunks/
+captions_raw.json
+face.json
+sil.json
+sync.json
+mix.json
+timeline.json
+*.png
+film_assets/kidquest.src.html
+parts/

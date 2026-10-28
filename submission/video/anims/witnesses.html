@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="_base.css"></head><body><div id="root"></div><script>
+const cue=(re,f)=>(window.CUES||[]).find(c=>re.test(c.text))?.t??f;
+const clamp=x=>Math.max(0,Math.min(1,x));const ease=(t,t0,d=.5)=>1-Math.pow(1-clamp((t-t0)/d),3);
+const pop=(t,t0)=>{const p=clamp((t-t0)/.45);return p<=0?0:1+Math.sin(p*Math.PI)*.12*(1-p)+(1-Math.pow(1-p,3))-1};
+const A=cue(/Independent/i,.2), B=cue(/quorum/i,4), C=cue(/record/i,6.2)+2.0, D=cue(/witnesses/i,8.7)+1.5;
+const TR=["TikTok Pixel","Meta Pixel","DoubleClick","Hotjar","Meta","Tag Manager"];
+const N=[[-560,-250],[560,-250],[-640,170],[640,170],[0,370]];
+window.seek=t=>{const cx=960,cy=470;let h='';
+ const page=ease(t,A,.6);
+ // links from nodes to the page
+ h+='<svg class="abs" style="left:0;top:0" width="1920" height="1080">';
+ N.forEach(([dx,dy],i)=>{const s=ease(t,A+.5+i*.35,.5);const x=cx+dx,y=cy+dy;
+  h+=`<line x1="${x}" y1="${y}" x2="${x+(cx-x)*s*.78}" y2="${y+(cy-y)*s*.78}" stroke="${t>D?'#18b26b':'#b9bbc3'}" stroke-width="4" stroke-dasharray="10 10" stroke-dashoffset="${-t*40}"/>`});
+ h+='</svg>';
+ h+=`<div class="abs card" style="left:${cx-300}px;top:${cy-190}px;width:600px;height:380px;opacity:${page};transform:scale(${.9+.1*page})">
+  <div style="height:44px;border-bottom:1px solid #e8e8ec;display:flex;align-items:center;padding:0 18px;font:16px Geist Mono;color:#8a8c94">kidquest · ages 6–12</div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-content:center;height:320px;padding:0 30px">`;
+ TR.forEach((n,i)=>{const s=pop(t,B+.15*i);h+=`<span class="pill" style="font-size:22px;padding:8px 16px 8px 8px;transform:scale(${s});border:2px solid ${t>D?'#18b26b':'#ef4b3f'}"><b style="width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:#fde6e4;color:#ef4b3f;font-size:15px">${n[0]}</b>${n}</span>`});
+ h+='</div></div>';
+ N.forEach(([dx,dy],i)=>{const s=pop(t,A+.3+i*.35);const lone=t>C&&t<D&&i>0;const ok=t>B+1.2;
+  h+=`<div class="abs" style="left:${cx+dx}px;top:${cy+dy}px;transform:translate(-50%,-50%) scale(${s});opacity:${lone?.18:1};display:grid;justify-items:center;gap:8px">
+   <div style="width:96px;height:96px;border-radius:50%;display:grid;place-items:center;background:${t>D?'#18b26b':'#111214'};color:#fff;box-shadow:0 0 0 ${t>D?14:0}px rgba(24,178,107,.18)">
+   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></svg></div>
+   <span class="pill" style="font-size:20px;padding:6px 14px">Node ${i+1}${ok?' ✓ 6 seen':''}</span></div>`});
+ const q=ease(t,B+1.6,.5);
+ h+=`<div class="abs" style="left:0;right:0;top:40px;text-align:center;opacity:${q}"><span class="pill ${t>D?'green':'ink'}" style="font-size:32px">${t>D?'5 witnesses agree':'Quorum: 5 of 5 nodes'}</span></div>`;
+ document.getElementById('root').innerHTML=h};window.seek(0);
+</script></body></html>

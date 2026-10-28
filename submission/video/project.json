@@ -1,160 +1,193 @@
 {
- "title": "Hall Monitor",
- "layout": "pitch",
- "speed": 1.1,
- "output": "out/video.mp4",
- "theme": {
-  "accent": "#3EE07F",
-  "head": "Inter",
-  "body": "Inter"
- },
- "music": "synth",
- "end": {
   "title": "Hall Monitor",
-  "tagline": "One screenshot isn't evidence. <b>Five witnesses are.</b>",
-  "links": [
-   "hall-monitor.codeswithroh.workers.dev",
-   "github.com/codeswithroh/hall-monitor"
+  "layout": "pitch",
+  "speed": 1.1,
+  "output": "out/video.mp4",
+  "theme": {
+    "accent": "#3EE07F",
+    "head": "Geist",
+    "body": "Geist"
+  },
+  "music": "synth",
+  "end": {
+    "title": "Hall Monitor",
+    "tagline": "One screenshot isn't evidence. <b>Five witnesses are.</b>",
+    "links": [
+      "hall-monitor.codeswithroh.workers.dev",
+      "github.com/codeswithroh/hall-monitor"
+    ],
+    "by": "Built for BLI Legal Tech Hackathon 2 · Chainlink CRE"
+  },
+  "scenes": [
+    {
+      "title": "Hook",
+      "start": "This kids' game sends",
+      "shots": [
+        {
+          "speaker": true
+        },
+        {
+          "rec": "kidquest",
+          "t": 9.9,
+          "from": "It's built for six",
+          "to": 13.2
+        },
+        {
+          "rec": "kidquest_source",
+          "t": 14.9,
+          "from": "And it loads ad",
+          "to": 20.3
+        }
+      ]
+    },
+    {
+      "title": "The problem",
+      "start": "Under COPPA that needs",
+      "shots": [
+        {
+          "speaker": true,
+          "card": "coppa"
+        },
+        {
+          "speaker": true,
+          "from": "But proving it is"
+        },
+        {
+          "anim": "screenshot",
+          "from": "Today a case rests"
+        },
+        {
+          "title": "UNTIL NOW.",
+          "from": "Until now"
+        }
+      ]
+    },
+    {
+      "title": "Meet Hall Monitor",
+      "start": "This is Hall Monitor",
+      "shots": [
+        {
+          "rec": "landing",
+          "t": 26.6,
+          "to": 29.3
+        },
+        {
+          "anim": "witnesses",
+          "from": "Independent Chainlink nodes each"
+        }
+      ]
+    },
+    {
+      "title": "Live audit",
+      "start": "Let's audit it live",
+      "shots": [
+        {
+          "rec": "audit",
+          "t": 36.4,
+          "to": 40.4
+        },
+        {
+          "rec": "audit",
+          "t": 54.1,
+          "from": "Six third parties",
+          "to": 58.6
+        },
+        {
+          "rec": "etherscan",
+          "t": 64.6,
+          "from": "And it's sealed on",
+          "to": 69.2,
+          "zoom": "tl"
+        }
+      ]
+    },
+    {
+      "title": "The case file",
+      "start": "The case file shows",
+      "shots": [
+        {
+          "rec": "overview",
+          "t": 75.0,
+          "to": 79.4
+        },
+        {
+          "rec": "overview",
+          "t": 79.5,
+          "from": "Click any tracker and",
+          "to": 93.2
+        }
+      ]
+    },
+    {
+      "title": "Proof",
+      "start": "Now the site fixes",
+      "shots": [
+        {
+          "rec": "remediate",
+          "t": 110.6,
+          "to": 113.3
+        },
+        {
+          "rec": "remediate",
+          "t": 113.2,
+          "to": 114.7,
+          "from": "We audit again"
+        },
+        {
+          "rec": "remediate",
+          "t": 127.8,
+          "to": 128.8,
+          "from": "Clean"
+        },
+        {
+          "rec": "remediated",
+          "t": 136.2,
+          "from": "But the history stays",
+          "to": 147.0
+        },
+        {
+          "rec": "verify",
+          "t": 152.2,
+          "from": "And anyone can check",
+          "to": 158.6
+        }
+      ]
+    },
+    {
+      "title": "How it works",
+      "start": "Under the hood it's",
+      "shots": [
+        {
+          "anim": "pipeline"
+        },
+        {
+          "rec": "terminal",
+          "t": 159.4,
+          "from": "The live demo runs",
+          "to": 166.6
+        }
+      ]
+    },
+    {
+      "title": "Outro",
+      "start": "Kids can't read a",
+      "shots": [
+        {
+          "speaker": true
+        }
+      ]
+    },
+    {
+      "title": "Close",
+      "start": "Run an audit at",
+      "end_card": true,
+      "shots": [
+        {
+          "speaker": true
+        }
+      ]
+    }
   ],
-  "by": ""
- },
- "scenes": [
-  {
-   "title": "Hook",
-   "start": "This kids' game sends",
-   "shots": [
-    {
-     "speaker": true
-    },
-    {
-     "rec": "kidquest",
-     "t": 0,
-     "from": "It's built for six"
-    },
-    {
-     "rec": "kidquest_source",
-     "t": 0,
-     "from": "And it loads ad"
-    }
-   ]
-  },
-  {
-   "title": "The problem",
-   "start": "Under COPPA that needs",
-   "shots": [
-    {
-     "speaker": true,
-     "card": "coppa"
-    },
-    {
-     "speaker": true,
-     "from": "But proving it is"
-    },
-    {
-     "anim": "screenshot",
-     "from": "Today a case rests"
-    },
-    {
-     "title": "UNTIL NOW.",
-     "from": "Until now"
-    }
-   ]
-  },
-  {
-   "title": "Meet Hall Monitor",
-   "start": "This is Hall Monitor",
-   "shots": [
-    {
-     "rec": "landing",
-     "t": 0
-    },
-    {
-     "anim": "witnesses",
-     "from": "Independent Chainlink nodes each"
-    }
-   ]
-  },
-  {
-   "title": "Live audit",
-   "start": "Let's audit it live",
-   "shots": [
-    {
-     "rec": "audit",
-     "t": 0
-    },
-    {
-     "rec": "audit_result",
-     "t": 0,
-     "from": "Six third parties Five"
-    },
-    {
-     "rec": "etherscan",
-     "t": 0,
-     "from": "And it's sealed on"
-    }
-   ]
-  },
-  {
-   "title": "The case file",
-   "start": "The case file shows",
-   "shots": [
-    {
-     "rec": "overview",
-     "t": 0
-    },
-    {
-     "rec": "drawer",
-     "t": 0,
-     "from": "Click any tracker and",
-     "zoom": "tr"
-    }
-   ]
-  },
-  {
-   "title": "Proof",
-   "start": "Now the site fixes",
-   "shots": [
-    {
-     "rec": "remediate",
-     "t": 0
-    },
-    {
-     "rec": "remediated",
-     "t": 0,
-     "from": "But the history stays"
-    },
-    {
-     "rec": "verify",
-     "t": 0,
-     "from": "And anyone can check"
-    }
-   ]
-  },
-  {
-   "title": "How it works",
-   "start": "Under the hood it's",
-   "shots": [
-    {
-     "anim": "pipeline"
-    },
-    {
-     "rec": "terminal",
-     "t": 0,
-     "from": "The live demo runs"
-    }
-   ]
-  },
-  {
-   "title": "Outro",
-   "start": "Kids can't read a",
-   "shots": [
-    {
-     "speaker": true
-    }
-   ],
-   "end_card": true
-  }
- ],
- "sfx": [],
- "url": "https://hall-monitor.codeswithroh.workers.dev"
+  "sfx": [],
+  "url": "https://hall-monitor.codeswithroh.workers.dev"
 }

@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="_base.css"></head><body><div id="root"></div><script>
+const cue=(re,f)=>(window.CUES||[]).find(c=>re.test(c.text))?.t??f;
+const clamp=x=>Math.max(0,Math.min(1,x));const ease=(t,t0,d=.5)=>1-Math.pow(1-clamp((t-t0)/d),3);
+const pop=(t,t0)=>{const p=clamp((t-t0)/.45);return p<=0?0:1+Math.sin(p*Math.PI)*.12*(1-p)+(1-Math.pow(1-p,3))-1};
+const A=cue(/screenshot/i,.3), Q1=cue(/captured/i,3)+1.4, Q2=cue(/edited/i,5.9)+0.1, Q3=cue(/how long|really there/i,5.9)+1.3;
+const Q=[["How was it captured?",Q1,-430,-210],["Was it edited?",Q2,450,-120],["How long was it there?",Q3,-380,250]];
+window.seek=t=>{const a=ease(t,A,.6), fade=ease(t,Q3+1.2,.8);
+ const shake=t>Q2&&t<Q2+.5?Math.sin((t-Q2)*60)*6*(1-(t-Q2)/.5):0;
+ let h=`<div class="abs card" style="left:660px;top:250px;width:600px;height:420px;opacity:${a};transform:translate(${shake}px,${(1-a)*40}px) rotate(-3deg);filter:grayscale(${fade})">
+  <div style="height:44px;border-bottom:1px solid #e8e8ec;display:flex;gap:8px;align-items:center;padding:0 16px"><i style="width:11px;height:11px;border-radius:50%;background:#d4d5db"></i><i style="width:11px;height:11px;border-radius:50%;background:#d4d5db"></i><i style="width:11px;height:11px;border-radius:50%;background:#d4d5db"></i><span style="margin-left:10px;font:15px Geist Mono;color:#8a8c94">screenshot_final_v2.png</span></div>
+  <div style="padding:30px;display:grid;gap:16px"><div style="height:120px;border-radius:16px;background:#ffcf3f"></div><div style="display:flex;gap:14px"><div style="flex:1;height:110px;border-radius:14px;background:#5ec8ff"></div><div style="flex:1;height:110px;border-radius:14px;background:#ff5d8f"></div><div style="flex:1;height:110px;border-radius:14px;background:#5be38b"></div></div></div></div>
+  <div class="abs h" style="left:0;right:0;top:760px;text-align:center;font-size:40px;opacity:${a}">One investigator. <span style="color:#8a8c94">One screenshot.</span></div>`;
+ for(const [txt,tq,dx,dy] of Q){const s=pop(t,tq);h+=`<div class="abs pill red" style="left:${960+dx}px;top:${460+dy}px;transform:translate(-50%,-50%) scale(${s});opacity:${clamp(s*2)}"><b style="font-size:34px">?</b>${txt}</div>`}
+ document.getElementById('root').innerHTML=h};window.seek(0);
+</script></body></html>
