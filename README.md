@@ -137,19 +137,19 @@ Built for the [BLI Legal Tech Hackathon 2](https://dorahacks.io/hackathon/legal-
 ## How it works
 
 ```mermaid
-flowchart LR
-    T([Cron trigger]) --> N1 & N2 & N3
-    subgraph DON["Chainlink DON (CRE workflow)"]
+flowchart TD
+    T([Cron trigger]) --> DON
+    subgraph DON["Chainlink DON · CRE workflow"]
+        direction LR
         N1[Node 1<br/>fetch + extract]
         N2[Node 2<br/>fetch + extract]
         N3[Node N<br/>fetch + extract]
     end
-    N1 & N2 & N3 --> C{Identical<br/>consensus}
-    C --> M[COPPA rules<br/>16 CFR 312]
-    M --> P[Evidence pack<br/>keccak256]
-    P --> R[Signed report]
-    R --> F[KeystoneForwarder]
-    F --> H[(HallMonitor.sol<br/>first / last seen)]
+    DON --> C{Identical consensus}
+    C --> M[COPPA rules · 16 CFR 312]
+    M --> P[Evidence pack · keccak256]
+    P --> R[Signed report → KeystoneForwarder]
+    R --> H[(HallMonitor.sol<br/>first seen · last seen · active)]
     H --> D[Dashboard + Verify]
 ```
 
