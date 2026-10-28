@@ -6,8 +6,7 @@
 
 <p align="center">
   <b>Court-ready evidence of children's-privacy violations.</b><br>
-  Independent Chainlink CRE nodes catch the trackers on kids' websites, map each one to COPPA,<br>
-  and seal the record on Ethereum so it can't be disputed or erased.
+  Independent Chainlink CRE nodes catch the trackers on kids' websites, map each one to COPPA, and seal the record on Ethereum so it can't be disputed or erased.
 </p>
 
 <p align="center">
