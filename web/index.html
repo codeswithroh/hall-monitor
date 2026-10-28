@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hall Monitor</title>
+  <meta name="description" content="Children's-privacy audits that hold up as evidence. Chainlink CRE nodes independently observe trackers on child-directed sites and sign the record on-chain.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23b3261e'/><path d='M9 8v16M23 8v16M9 16h14' stroke='white' stroke-width='3.5' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="kicker">In re: Children's Online Privacy · 15 U.S.C. §§ 6501–6506</p>
+      <div class="masthead-row">
+        <h1>Hall Monitor</h1>
+        <dl class="chain">
+          <div><dt>Network</dt><dd id="network">—</dd></div>
+          <div><dt>Contract</dt><dd id="contract" class="mono">—</dd></div>
+          <div><dt>Pages</dt><dd id="count-pages">—</dd></div>
+          <div><dt>Audits</dt><dd id="count-audits">—</dd></div>
+        </dl>
+      </div>
+      <p class="lede">COPPA audits that hold up as evidence. Every Chainlink oracle node fetches a child-directed page on its own. Only the trackers a quorum agrees on are recorded, mapped to 16 CFR Part 312, hashed and signed on-chain. Re-audits build a history of how long each violation lasted.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel" aria-labelledby="docket-h">
+      <h2 id="docket-h"><span class="sec">§ 1</span> The docket</h2>
+      <div id="docket" class="docket"><p class="loading">Reading audits from the chain…</p></div>
+    </section>
+
+    <section id="casefile" class="panel casefile" hidden aria-labelledby="case-h">
+      <h2 id="case-h"><span class="sec">§ 2</span> Case file</h2>
+      <p id="case-url" class="case-url mono"></p>
+      <div id="case-body"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="run-h">
+      <h2 id="run-h"><span class="sec">§ 3</span> Run an audit</h2>
+      <div id="run-local" hidden>
+        <form id="audit-form" class="audit-form">
+          <label class="field grow"><span>Page URL</span><input id="url" name="url" type="url" required></label>
+          <label class="check"><input type="checkbox" name="childDirected" checked> Child-directed</label>
+          <label class="check"><input type="checkbox" name="broadcast" checked> Write to Sepolia</label>
+          <button type="submit" class="primary">Run CRE audit</button>
+        </form>
+        <div class="demo-bar">
+          <span>KidQuest demo site:</span>
+          <span id="demo-state" class="stamp">…</span>
+          <button class="ghost" data-demo="remediate">Remediate site</button>
+          <button class="ghost" data-demo="regress">Re-add trackers</button>
+        </div>
+        <div class="run-grid">
+          <pre id="console" class="console" hidden aria-live="polite"></pre>
+          <div id="live-findings"></div>
+        </div>
+      </div>
+      <div id="run-hosted" class="note">
+        <p>Live audits run the Chainlink CRE workflow through the CRE CLI, so they work from a local checkout. This hosted page reads the same on-chain record.</p>
+        <pre class="console static">git clone https://github.com/codeswithroh/hall-monitor
+cd hall-monitor && bun install && bun run dev</pre>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="verify-h">
+      <h2 id="verify-h"><span class="sec">§ 4</span> Verify an exhibit</h2>
+      <p class="muted">Check an evidence pack without trusting Hall Monitor. Your browser re-hashes the pack, re-runs the published COPPA rules and looks the hash up on-chain.</p>
+      <label id="drop" class="drop">
+        <input id="file" type="file" accept=".json,.log,.txt" hidden>
+        <strong>Drop an evidence pack or workflow log</strong>
+        <span>or click to choose a file</span>
+      </label>
+      <button id="sample" class="ghost">Try the sample exhibit (audit #0)</button>
+      <div id="verify-out"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Automated observations flagged for legal review, not findings of liability. Static HTML only: tags injected at runtime are not visible to the extractor. KidQuest Games is a fictional site with fake tracker IDs.</p>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

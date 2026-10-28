@@ -1,0 +1,10 @@
+node_modules
+.env
+.wrangler
+web/dist
+contracts/out
+contracts/cache
+contracts/broadcast
+.cre_build_tmp.js
+*.wasm
+.DS_Store

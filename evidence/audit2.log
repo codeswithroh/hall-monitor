@@ -1,0 +1,33 @@
+Initializing...
+Loading settings...
+Checking RPC connectivity...
+Compiling workflow...
+✓ Workflow compiled
+✓ Simulation limits enabled
+  HTTP: req=120kb resp=250kb timeout=10s | ConfHTTP: req=125kb resp=500kb timeout=1m30s | Consensus obs=25kb | ChainWrite evm_report=50kb evm_gas=10000000 solana_report=265b solana_cu=300000 | WASM binary=100mb compressed=20mb
+  Binary hash: 653387600f1ac0c7ac625ac79fd089d93cd124fa804d3483c7a243272019aefa
+  Config hash: a486b08e1817d9580b607ec0d7a3034b76d413126aea467c5dcc680ffe7598f9
+2026-10-28T14:22:52Z [SIMULATION] Simulator Initialized
+
+2026-10-28T14:22:52Z [SIMULATION] Running trigger trigger=cron-trigger@1.0.0
+2026-10-28T14:22:52Z [USER LOG] [http://localhost:8787/] 0 third parties · 0 high · 0 medium · 0 review
+2026-10-28T14:22:52Z [USER LOG] EVIDENCE_PACK 1/2 {"schema":"hall-monitor/evidence-pack@1","url":"http://localhost:8787/","observedAt":"2026-10-28T08:52:52.000Z","audience":"child-directed","method":"Each Chainlink DON node fetched the page independently and extracted third-party hosts from static HTML (script/img/iframe/link tags and URLs in inline scripts). Only the host set agreed by consensus is recorded.","summary":{"thirdParties":0,"high":0,"medium":0,"review":0},"findings":[],"disclaimer":"Automated observation flagged for legal review. Not a finding of liability. Scripts injected at runtime are not visible to static extraction, so abs
+2026-10-28T14:22:52Z [USER LOG] EVIDENCE_PACK 2/2 ence of a tracker here does not prove absence on the live page."}
+2026-10-28T14:22:52Z [USER LOG] evidence hash 0x8f1b743782802b53c84aa9a14c0c39c63f6198cf7c1cbfd1b70d6aecb7194ff0
+2026-10-28T14:23:01Z [USER LOG] [http://localhost:8787/] audit report → tx 0x2b8dbd62ff8e51282cbc1de60dfef6501c21ae13d412bc75587fc8b484120f01
+
+✓ Workflow Simulation Result:
+"0x2b8dbd62ff8e51282cbc1de60dfef6501c21ae13d412bc75587fc8b484120f01"
+
+2026-10-28T14:23:01Z [SIMULATION] Execution finished signal received
+2026-10-28T14:23:01Z [SIMULATION] Skipping WorkflowEngineV2
+
+╭──────────────────────────────────────────────────────╮
+│ Simulation complete! Ready to deploy your workflow?  │
+│                                                      │
+│ Run cre account access to request deployment access. │
+╰──────────────────────────────────────────────────────╯
+
+⚠️  Update available! You’re running 1.35.0, but 1.39.0 is the latest.
+Run `cre update` or visit https://github.com/smartcontractkit/cre-cli/releases to upgrade.
+

@@ -1,0 +1,7 @@
+{
+  "schedule": "0 0 */6 * * *",
+  "chainSelectorName": "ethereum-testnet-sepolia",
+  "hallMonitorAddress": "0x6f576CCa32A5f4337df8769E42a954d133167888",
+  "gasLimit": "10000000",
+  "targets": [{ "url": "http://localhost:8787/", "childDirected": true }]
+}

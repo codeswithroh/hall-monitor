@@ -1,0 +1,9 @@
+# Chainlink CRE project for Hall Monitor
+staging-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: ${SEPOLIA_RPC}
+production-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: ${SEPOLIA_RPC}

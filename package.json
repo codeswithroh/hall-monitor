@@ -1,0 +1,20 @@
+{
+  "name": "hall-monitor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run demo-site/server.ts & bun run web/server.ts",
+    "demo": "bun run demo-site/server.ts",
+    "web": "bun run web/server.ts",
+    "build": "bun web/build.ts",
+    "deploy": "bun web/build.ts && cd web && bunx wrangler deploy",
+    "verify": "bun tools/verify.ts",
+    "test": "cd cre/audit && bun test && cd ../../contracts && forge test"
+  },
+  "dependencies": {
+    "viem": "^2.30.0"
+  },
+  "devDependencies": {
+    "wrangler": "4"
+  }
+}
