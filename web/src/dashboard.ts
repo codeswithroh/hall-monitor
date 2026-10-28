@@ -5,6 +5,10 @@ import { buildPack, type EvidencePack } from "../../cre/audit/pack"
 import { Category } from "../../cre/audit/trackers"
 import { gauge, icon, radar, ring, tickDial } from "./charts"
 import { CHAIN, DEMO_URL, GITHUB, HALL_MONITOR } from "./config"
+
+/** Where audits run: the local server (real CRE CLI) or the hosted Worker runner. */
+let mode: "local" | "hosted" | "none" = "none"
+let demoUrl = DEMO_URL
 import { client, grade, loadSites, pageIdOf, scoreOf, type Audit, type Site, type Tracker } from "./data"
 
 // ------------------------------------------------------------------ helpers
@@ -64,7 +68,7 @@ const toast = (msg: string) => {
 
 let sites: Site[] = []
 let audits: Audit[] = []
-let local = false
+let local = false // true when audits can run here (local CRE CLI or hosted runner)
 let loaded = false
 let loadError = ""
 
@@ -369,7 +373,7 @@ const sitesView = () => {
 
     <section class="card span-12 urlbar">
       <span class="ub-ic">${icon("sparkle", 16)}</span>
-      <form id="quick" class="ub-form"><input name="url" type="url" placeholder="https://kids-site.example" value="${local ? DEMO_URL : ""}" required aria-label="URL to audit">
+      <form id="quick" class="ub-form"><input name="url" type="url" placeholder="https://kids-site.example" value="${local ? demoUrl : ""}" required aria-label="URL to audit">
       <button class="btn-primary" ${local ? "" : "disabled title='Runs locally with the CRE CLI'"}>${icon("play", 14)} Start audit</button></form>
     </section>
 
@@ -415,7 +419,7 @@ const auditView = (url?: string) => `
     <section class="card span-12 urlbar">
       <span class="ub-ic">${icon("sparkle", 16)}</span>
       <form id="audit-form" class="ub-form">
-        <input name="url" type="url" required value="${esc(url ?? DEMO_URL)}" aria-label="URL to audit" ${local ? "" : "disabled"}>
+        <input name="url" type="url" required value="${esc(url ?? demoUrl)}" aria-label="URL to audit" ${local ? "" : "disabled"}>
         <label class="sw"><input type="checkbox" name="childDirected" checked ${local ? "" : "disabled"}><span></span>Child-directed</label>
         <label class="sw"><input type="checkbox" name="broadcast" checked ${local ? "" : "disabled"}><span></span>On-chain</label>
         <button class="btn-primary" ${local ? "" : "disabled"}>${icon("play", 14)} Start audit</button>
@@ -423,7 +427,11 @@ const auditView = (url?: string) => `
     </section>
     ${
       local
-        ? ""
+        ? `<div class="span-12 modebar">${
+            mode === "local"
+              ? `<span class="chip">${icon("terminal", 14)} CRE CLI simulator</span>`
+              : `<span class="chip">${icon("nodes", 14)} Hosted runner · 3 observers, 2 must agree</span><span class="chip">${icon("seal", 14)} Sealed via CRE forwarder on ${CHAIN.name}</span>`
+          }</div>`
         : `<section class="card span-12 banner">${icon("terminal", 20)}<div><b>Live audits run locally</b><code>git clone ${GITHUB} && bun install && bun run dev</code></div>
            <button class="btn-ic" data-copy="git clone ${GITHUB}.git && cd hall-monitor && bun install && bun run dev" aria-label="Copy command">${icon("copy", 16)}</button></section>`
     }
@@ -441,7 +449,7 @@ const auditView = (url?: string) => `
       <div class="demo">
         <div class="demo-state" id="demo-state"><span class="big-dot"></span><b>—</b></div>
         <label class="sw lg"><input type="checkbox" id="demo-toggle" ${local ? "" : "disabled"}><span></span>Trackers planted</label>
-        <a class="link-s" href="${DEMO_URL}" target="_blank" rel="noopener">${icon("ext", 13)} Open site</a>
+        <a class="link-s" href="${demoUrl}" target="_blank" rel="noopener">${icon("ext", 13)} Open site</a>
       </div>
     </section>
     <section class="card span-12">
@@ -514,7 +522,7 @@ const runAudit = async (form: HTMLFormElement) => {
   }
   try {
     const res = await fetch("/api/audit", { method: "POST", body: JSON.stringify(body) })
-    if (!res.ok || !res.body) throw new Error(await res.text())
+    if (!res.ok || !res.body) throw new Error((await res.text()) || `HTTP ${res.status}`)
     const reader = res.body.pipeThrough(new TextDecoderStream()).getReader()
     let buf = ""
     for (;;) {
@@ -529,7 +537,9 @@ const runAudit = async (form: HTMLFormElement) => {
         const payload = msg.replace(/^event: .*\n/m, "").replace(/^data: /gm, "")
         if (event === "line") {
           if (!payload.includes("EVIDENCE_PACK")) log(payload)
-          if (/Running trigger/.test(payload)) setStage("extract", "active")
+          if (/Running trigger/.test(payload)) setStage("fetch", "active")
+          if (/observer \d|Simulator Initialized/.test(payload)) setStage("extract", "active")
+          if (/consensus:/.test(payload)) setStage("consensus", "active")
           if (/third parties/.test(payload)) setStage("map", "active")
           if (/evidence hash/.test(payload)) setStage("seal", "active")
         } else if (event === "done") {
@@ -545,7 +555,13 @@ const runAudit = async (form: HTMLFormElement) => {
             $("#result-meta").innerHTML = onchain ? `<a href="${txUrl(r.tx!)}" target="_blank" rel="noopener">${icon("ext", 13)} ${short(r.tx!)}</a>` : "simulated · not written"
             if (onchain) {
               toast("Audit sealed on-chain")
-              await refresh()
+              // Public RPCs can lag a block behind the receipt; poll until the new audit shows up.
+              const before = audits.length
+              for (let i = 0; i < 8; i++) {
+                await refresh()
+                if (audits.length > before) break
+                await new Promise((z) => setTimeout(z, 2500))
+              }
             }
           }
         }
@@ -553,7 +569,7 @@ const runAudit = async (form: HTMLFormElement) => {
     }
   } catch (e) {
     setStage("fetch", "error")
-    $("#result").innerHTML = `<div class="clean sm bad">${icon("alert", 26)}<b>${esc(String(e))}</b></div>`
+    $("#result").innerHTML = `<div class="clean sm bad">${icon("alert", 26)}<b>${esc(String((e as Error).message ?? e))}</b></div>`
   } finally {
     btn.disabled = false
     btn.innerHTML = `${icon("play", 14)} Start audit`
@@ -636,7 +652,7 @@ const verify = async (file: File) => {
     return
   }
   const hash = keccak256(toBytes(JSON.stringify(pack)))
-  const rebuilt = buildPack(pack.url, Math.floor(Date.parse(pack.observedAt) / 1000), pack.audience === "child-directed", pack.findings.map((f) => ({ host: f.host, via: f.via })))
+  const rebuilt = buildPack(pack.url, Math.floor(Date.parse(pack.observedAt) / 1000), pack.audience === "child-directed", pack.findings.map((f) => ({ host: f.host, via: f.via })), pack.method)
   const rulesOk = rebuilt.hash === hash
   $("#v-meta").textContent = `${hostOfUrl(pack.url)} · ${short(hash, 8)}`
   const a = checkCard("ok", "file", "Parsed", `${pack.findings.length} findings`)
@@ -772,10 +788,13 @@ const boot = async () => {
     render()
   })
   try {
-    local = (await fetch("/api/health").then((r) => r.json()))?.local === true
+    const h = (await fetch("/api/health").then((r) => r.json())) as { local?: boolean; hosted?: boolean; demoUrl?: string }
+    mode = h.local ? "local" : h.hosted ? "hosted" : "none"
+    if (h.demoUrl) demoUrl = h.demoUrl
   } catch {
-    local = false
+    mode = "none"
   }
+  local = mode !== "none"
   document.body.classList.toggle("is-local", local)
   render()
   await refresh()

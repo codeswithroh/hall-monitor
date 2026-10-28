@@ -85,7 +85,7 @@ Bun.serve({
   idleTimeout: 255,
   async fetch(req) {
     const { pathname } = new URL(req.url)
-    if (pathname === "/api/health") return Response.json({ local: true })
+    if (pathname === "/api/health") return Response.json({ local: true, demoUrl: `${DEMO}/` })
     if (pathname === "/api/audit" && req.method === "POST") return audit(req)
     const demo = /^\/api\/demo\/(remediate|regress|state)$/.exec(pathname)
     if (demo) {

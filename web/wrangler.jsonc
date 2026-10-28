@@ -1,9 +1,22 @@
 {
   "$schema": "../node_modules/wrangler/config-schema.json",
   "name": "hall-monitor",
+  "main": "src/worker.ts",
   "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  "rules": [{ "type": "Text", "globs": ["**/*.html"], "fallthrough": true }],
+  "durable_objects": { "bindings": [{ "name": "HUB", "class_name": "Hub" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Hub"] }],
+  "vars": {
+    "SEPOLIA_RPC": "https://ethereum-sepolia-rpc.publicnode.com",
+    "HALL_MONITOR": "0x6f576CCa32A5f4337df8769E42a954d133167888",
+    "CRE_FORWARDER": "0x15fC6ae953E024d975e77382eEeC56A9101f9F88"
+  },
+  "observability": { "enabled": true }
+  // Secret: CRE_ETH_PRIVATE_KEY (wrangler secret put CRE_ETH_PRIVATE_KEY)
 }

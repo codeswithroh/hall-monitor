@@ -1,3 +1,5 @@
+<img src="brand/logo-lockup.png" alt="Hall Monitor" width="420">
+
 # Hall Monitor
 
 Children's-privacy (COPPA) audits that hold up as evidence. A Chainlink CRE workflow has every node in
@@ -11,6 +13,11 @@ lasted and whether it was fixed.
 
 **Live:** [landing](https://hall-monitor.codeswithroh.workers.dev) · [dashboard](https://hall-monitor.codeswithroh.workers.dev/app/), reading the
 [HallMonitor contract](https://sepolia.etherscan.io/address/0x6f576CCa32A5f4337df8769E42a954d133167888) on Ethereum Sepolia.
+
+**Try it live:** open the dashboard → **Run audit** → **Start audit**. It audits the hosted
+[KidQuest demo site](https://hall-monitor.codeswithroh.workers.dev/kidquest/) and seals the result on Sepolia.
+Switch off **Trackers planted**, run again, and the Overview shows every tracker remediated. Drop the
+downloaded evidence pack into **Verify** to check it against the chain.
 
 Built for the [BLI Legal Tech Hackathon 2](https://dorahacks.io/hackathon/legal-hack-2026) (LegalTech & RegTech track:
 data privacy for minors) and the Chainlink CRE bounty.
@@ -48,9 +55,21 @@ contracts/      HallMonitor.sol: CRE receiver with per-page, per-tracker persist
 web/            Landing page (/) and dashboard (/app): compliance gauge, exposure radar, observation
                 record, audit trail, tracker drawer with COPPA citations, printable exhibit, site
                 portfolio, live audit pipeline, in-browser exhibit verifier
+brand/          Logo mark and lockups (SVG + PNG)
 tools/verify.ts CLI verifier: re-hash a pack, re-derive its findings, confirm it onchain
 evidence/       Packs and logs from the live Sepolia audits
 ```
+
+## Two ways audits run
+
+| | Where | How it observes | How it's sealed |
+|---|---|---|---|
+| **CRE workflow** (canonical) | `cre workflow simulate` locally, or a deployed DON | each DON node fetches the page; identical consensus | DON-signed report → KeystoneForwarder → `HallMonitor.onReport` |
+| **Hosted runner** (live demo) | Cloudflare Worker + Durable Object (`web/src/worker.ts`) | 3 independent fetches; 2 must agree | same report encoding → CRE MockKeystoneForwarder on Sepolia → `HallMonitor.onReport` |
+
+Both run the same `extract.ts`, `coppa.ts` and `pack.ts`, and each evidence pack records its own method,
+so a pack says how it was observed. The hosted runner serializes audits so the signing wallet's nonces
+never collide, refuses private addresses, and rate-limits on-chain writes (one every 12 s, 12 per IP per hour).
 
 ## Quick start
 
@@ -113,8 +132,8 @@ bun run verify evidence/audit1.pack.json --rpc https://ethereum-sepolia-rpc.publ
      --broadcast --gas-limit 12000000 --constructor-args 0x15fC6ae953E024d975e77382eEeC56A9101f9F88
    ```
 2. Set `hallMonitorAddress` in `cre/audit/config.staging.json`, and `HALL_MONITOR` / `DEPLOY_BLOCK` in `web/src/config.ts`.
-3. Deploy the dashboard to Cloudflare: `bun run deploy`. It's a static build in `web/dist`, configured by `web/wrangler.jsonc`.
-   The hosted dashboard is read-only. Live audits need the local server.
+3. Deploy the site and hosted runner to Cloudflare: `wrangler secret put CRE_ETH_PRIVATE_KEY` (in `web/`, a funded
+   testnet key), then `bun run deploy`. Config lives in `web/wrangler.jsonc`.
 
 A DON-deployed workflow can't reach `localhost`. Host `demo-site/` publicly and update `targets`.
 

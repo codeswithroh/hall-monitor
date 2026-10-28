@@ -34,6 +34,7 @@ const rebuilt = buildPack(
   Math.floor(Date.parse(pack.observedAt) / 1000),
   pack.audience === "child-directed",
   pack.findings.map((f) => ({ host: f.host, via: f.via })),
+  pack.method,
 )
 const ok = (b: boolean) => (b ? "✓" : "✗")
 console.log(`pack hash        ${hash}`)

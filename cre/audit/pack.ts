@@ -10,6 +10,15 @@ import { Category, lookupTracker } from "./trackers"
 
 export const PACK_SCHEMA = "hall-monitor/evidence-pack@1"
 
+/** How the observations were made. Part of the hashed pack, so each runner states its own method. */
+export const DON_METHOD =
+  "Each Chainlink DON node fetched the page independently and extracted third-party hosts from static HTML " +
+  "(script/img/iframe/link tags and URLs in inline scripts). Only the host set agreed by consensus is recorded."
+export const HOSTED_METHOD =
+  "Hosted runner: three independent fetches of the page, each extracting third-party hosts from static HTML " +
+  "(script/img/iframe/link tags and URLs in inline scripts). A host set at least two fetches agreed on is recorded. " +
+  "Submitted through the Chainlink CRE mock forwarder on Ethereum Sepolia."
+
 export type PackFinding = {
   host: string
   via: string
@@ -45,6 +54,7 @@ export const buildPack = (
   observedAtSec: number,
   childDirected: boolean,
   observations: Observation[],
+  method: string = DON_METHOD,
 ): BuiltPack => {
   const rows = observations.map((o) => {
     const info = lookupTracker(o.host) ?? { entity: "Unknown third party", category: Category.Unknown }
@@ -67,9 +77,7 @@ export const buildPack = (
     url,
     observedAt: new Date(observedAtSec * 1000).toISOString(),
     audience: childDirected ? "child-directed" : "general",
-    method:
-      "Each Chainlink DON node fetched the page independently and extracted third-party hosts from static HTML " +
-      "(script/img/iframe/link tags and URLs in inline scripts). Only the host set agreed by consensus is recorded.",
+    method,
     summary: {
       thirdParties: rows.length,
       high: count(Severity.High),

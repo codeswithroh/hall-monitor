@@ -33,7 +33,7 @@ button { font: inherit; color: inherit; }
 .shell { max-width: 1320px; margin: 20px auto; background: var(--shell); border-radius: 36px; padding: 20px 24px 28px; box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.7); min-height: calc(100vh - 40px); }
 .top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; margin-bottom: 20px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; justify-self: start; background: var(--surface); padding: 8px 18px 8px 8px; border-radius: 999px; font-weight: 600; text-decoration: none; }
-.logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: #4ade80; }
+.logo { display: block; width: 34px; height: 34px; border-radius: 10px; }
 .nav { display: flex; gap: 8px; }
 .nav a { padding: 12px 24px; border-radius: 999px; background: var(--surface); text-decoration: none; font-weight: 500; transition: background 0.15s, color 0.15s; }
 .nav a:hover { background: #fafafa; }
@@ -244,6 +244,10 @@ button { font: inherit; color: inherit; }
 .sw input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 2px; }
 .sw input:disabled + span { opacity: 0.5; }
 .sw.lg { font-size: 14px; font-weight: 500; }
+
+/* run mode */
+.modebar { display: flex; gap: 8px; flex-wrap: wrap; margin: -4px 0; }
+.modebar .chip { background: var(--surface); }
 
 /* banner */
 .banner { display: flex; align-items: center; gap: 14px; background: var(--ink); color: #fff; }

@@ -27,7 +27,7 @@ a { color: inherit; }
 .page { max-width: 1320px; margin: 20px auto; background: var(--shell); border-radius: 36px; padding: 20px 24px 28px; box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.7); }
 .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; background: var(--surface); padding: 8px 18px 8px 8px; border-radius: 999px; font-weight: 600; text-decoration: none; }
-.logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: #4ade80; }
+.logo { display: block; width: 34px; height: 34px; border-radius: 10px; }
 .links { display: flex; gap: 8px; }
 .links a { padding: 11px 20px; border-radius: 999px; background: var(--surface); text-decoration: none; font-weight: 500; }
 .links a:hover { background: #fafafa; }
