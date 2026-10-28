@@ -18,7 +18,7 @@ LegalTech, RegTech, COPPA, Children's Privacy, Chainlink CRE, Ethereum, Evidence
 ## Links
 - GitHub Repo: https://github.com/codeswithroh/hall-monitor
 - Website: https://hall-monitor.codeswithroh.workers.dev
-- Video: (add your YouTube link)
+- Video: https://youtu.be/icnOPEoRwcg
 - Other: https://hall-monitor.codeswithroh.workers.dev/app/  (live dashboard)
 - Other: https://sepolia.etherscan.io/address/0x6f576CCa32A5f4337df8769E42a954d133167888  (HallMonitor contract)
 
@@ -82,6 +82,7 @@ Proving it is the hard part. Today a violation rests on one investigator's crawl
 - Hall Monitor flags exposure for legal review. It doesn't make findings of liability.
 
 ### Links
+- Demo video: https://youtu.be/icnOPEoRwcg
 - Live app: https://hall-monitor.codeswithroh.workers.dev
 - Dashboard: https://hall-monitor.codeswithroh.workers.dev/app/
 - Code: https://github.com/codeswithroh/hall-monitor

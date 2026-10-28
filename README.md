@@ -20,12 +20,18 @@
   <a href="https://hall-monitor.codeswithroh.workers.dev">Website</a> ·
   <a href="https://hall-monitor.codeswithroh.workers.dev/app/">Dashboard</a> ·
   <a href="https://hall-monitor.codeswithroh.workers.dev/kidquest/">Demo site</a> ·
+  <a href="https://youtu.be/icnOPEoRwcg">Video</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#how-it-works">How it works</a>
 </p>
 
 <p align="center">
   <img src="docs/assets/demo.gif" alt="A live audit: fetch, extract, consensus, COPPA map, seal on-chain" width="88%">
+</p>
+
+<p align="center">
+  <a href="https://youtu.be/icnOPEoRwcg"><img src="https://img.youtube.com/vi/icnOPEoRwcg/maxresdefault.jpg" alt="Watch the 2-minute demo on YouTube" width="60%"></a>
+  <br><sub>▶ <a href="https://youtu.be/icnOPEoRwcg">Watch the 2-minute demo</a></sub>
 </p>
 
 > **One screenshot isn't evidence. Five witnesses are.** Today a children's-privacy case rests on one
@@ -136,22 +142,9 @@ Built for the [BLI Legal Tech Hackathon 2](https://dorahacks.io/hackathon/legal-
 
 ## How it works
 
-```mermaid
-flowchart TD
-    T([Cron trigger]) --> DON
-    subgraph DON["Chainlink DON · CRE workflow"]
-        direction LR
-        N1[Node 1<br/>fetch + extract]
-        N2[Node 2<br/>fetch + extract]
-        N3[Node N<br/>fetch + extract]
-    end
-    DON --> C{Identical consensus}
-    C --> M[COPPA rules · 16 CFR 312]
-    M --> P[Evidence pack · keccak256]
-    P --> R[Signed report → KeystoneForwarder]
-    R --> H[(HallMonitor.sol<br/>first seen · last seen · active)]
-    H --> D[Dashboard + Verify]
-```
+<p align="center">
+  <img src="docs/assets/architecture.jpg" alt="Architecture: cron trigger, DON nodes fetch and extract, identical consensus, COPPA rules, evidence pack, signed report, KeystoneForwarder, HallMonitor.sol, dashboard and verify" width="100%">
+</p>
 
 | Step | What happens | Code |
 |---|---|---|
