@@ -1,0 +1,160 @@
+{
+ "title": "Hall Monitor",
+ "layout": "pitch",
+ "speed": 1.1,
+ "output": "out/video.mp4",
+ "theme": {
+  "accent": "#3EE07F",
+  "head": "Inter",
+  "body": "Inter"
+ },
+ "music": "synth",
+ "end": {
+  "title": "Hall Monitor",
+  "tagline": "One screenshot isn't evidence. <b>Five witnesses are.</b>",
+  "links": [
+   "hall-monitor.codeswithroh.workers.dev",
+   "github.com/codeswithroh/hall-monitor"
+  ],
+  "by": ""
+ },
+ "scenes": [
+  {
+   "title": "Hook",
+   "start": "This kids' game sends",
+   "shots": [
+    {
+     "speaker": true
+    },
+    {
+     "rec": "kidquest",
+     "t": 0,
+     "from": "It's built for six"
+    },
+    {
+     "rec": "kidquest_source",
+     "t": 0,
+     "from": "And it loads ad"
+    }
+   ]
+  },
+  {
+   "title": "The problem",
+   "start": "Under COPPA that needs",
+   "shots": [
+    {
+     "speaker": true,
+     "card": "coppa"
+    },
+    {
+     "speaker": true,
+     "from": "But proving it is"
+    },
+    {
+     "anim": "screenshot",
+     "from": "Today a case rests"
+    },
+    {
+     "title": "UNTIL NOW.",
+     "from": "Until now"
+    }
+   ]
+  },
+  {
+   "title": "Meet Hall Monitor",
+   "start": "This is Hall Monitor",
+   "shots": [
+    {
+     "rec": "landing",
+     "t": 0
+    },
+    {
+     "anim": "witnesses",
+     "from": "Independent Chainlink nodes each"
+    }
+   ]
+  },
+  {
+   "title": "Live audit",
+   "start": "Let's audit it live",
+   "shots": [
+    {
+     "rec": "audit",
+     "t": 0
+    },
+    {
+     "rec": "audit_result",
+     "t": 0,
+     "from": "Six third parties Five"
+    },
+    {
+     "rec": "etherscan",
+     "t": 0,
+     "from": "And it's sealed on"
+    }
+   ]
+  },
+  {
+   "title": "The case file",
+   "start": "The case file shows",
+   "shots": [
+    {
+     "rec": "overview",
+     "t": 0
+    },
+    {
+     "rec": "drawer",
+     "t": 0,
+     "from": "Click any tracker and",
+     "zoom": "tr"
+    }
+   ]
+  },
+  {
+   "title": "Proof",
+   "start": "Now the site fixes",
+   "shots": [
+    {
+     "rec": "remediate",
+     "t": 0
+    },
+    {
+     "rec": "remediated",
+     "t": 0,
+     "from": "But the history stays"
+    },
+    {
+     "rec": "verify",
+     "t": 0,
+     "from": "And anyone can check"
+    }
+   ]
+  },
+  {
+   "title": "How it works",
+   "start": "Under the hood it's",
+   "shots": [
+    {
+     "anim": "pipeline"
+    },
+    {
+     "rec": "terminal",
+     "t": 0,
+     "from": "The live demo runs"
+    }
+   ]
+  },
+  {
+   "title": "Outro",
+   "start": "Kids can't read a",
+   "shots": [
+    {
+     "speaker": true
+    }
+   ],
+   "end_card": true
+  }
+ ],
+ "sfx": [],
+ "url": "https://hall-monitor.codeswithroh.workers.dev"
+}
